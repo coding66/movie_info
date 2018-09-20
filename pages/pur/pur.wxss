@@ -1,0 +1,83 @@
+.content{
+  height: 1200rpx;
+}
+.swrap{
+   height: 400rpx;
+   width:100%;
+}
+.img{
+  height: 400rpx;
+   width:100%;
+}
+.movie-info{
+width:300rpx;
+height: 300rpx;
+
+
+}
+.pic{
+  position: relative;
+  top:20rpx;
+  left: 10rpx;
+  width: 300rpx;
+  height: 300rpx;
+ 
+}
+.movie{
+  position: relative;
+ display: flex;
+ flex-direction: row;
+ background-color:white;
+  width: 100%;
+  height: 340rpx;
+  border-bottom: 5rpx solid rgba(7, 17, 27, 0.9);
+}
+.introduce{
+
+  color: white;
+  font-size: 30rpx;
+  margin-left: 10rpx;
+  width: 100%;
+  line-height: 40rpx;
+}
+.decrition{
+  position: relative;
+  top: 60rpx;
+}
+.wrap{
+  opacity: 0;
+  position: absolute;
+  top:-10rpx;
+  right: -10rpx;
+  bottom: -10rpx;
+  left: -10rpx;
+}
+.moviename{
+  width: 50%;
+  display: inline-block;
+  margin: 50rpx  0 0 25rpx;
+  font-size: 30rpx;
+  color: black
+}
+.des{
+  margin-top: 6rpx;
+  margin-left: 50rpx;
+}
+.director{
+  display: inline-block;
+  height: 40rpx;
+  font-size: 30rpx;
+  color: rgba(7, 17, 27, 0.5);
+  line-height:35rpx;
+}
+.headtitle{
+  width: 100%;
+}
+.scroe{
+  position: relative;
+  font-size: 35rpx;
+  color: red;
+  left: 80rpx;
+  text-align: right
+  
+}

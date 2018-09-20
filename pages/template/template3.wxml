@@ -1,0 +1,7 @@
+<template name='playsrc'>
+      <view class='imginfo'>
+         <a href='{{item.sample_link}}'>
+           <image class='img' src='{{item.source.pic}}'></image>
+         </a>
+      </view>
+</template>

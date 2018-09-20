@@ -1,0 +1,43 @@
+{
+  "pages": [
+  
+   "pages/index/index",
+   "pages/shouye/shouye",
+    "pages/me/me",
+    "pages/detail/detail",
+    "pages/pur/pur",
+    "pages/logs/logs",
+    "pages/template/template"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0A0A0A",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "white",
+    "selectedColor": "#3cc51f",
+    "backgroundColor": "black",
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页",
+        "iconPath": "pages/asset/img/dy-1.png",
+        "selectedIconPath": "pages/asset/img/dy.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "搜素",
+        "iconPath": "pages/asset/img/search-1.png",
+        "selectedIconPath": "pages/asset/img/search.png"
+      },
+      {
+        "pagePath": "pages/pur/pur",
+        "text": "热门",
+        "iconPath": "pages/asset/img/tj-1.png",
+        "selectedIconPath": "pages/asset/img/tj.png"
+      }
+    ]
+  }
+}

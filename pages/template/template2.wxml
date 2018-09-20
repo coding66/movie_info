@@ -1,0 +1,5 @@
+<template name='pictrues'>
+      <view class='imginfo' bindtap='jumpdetail' id='{{item.id}}'>
+         <image class='img' src='{{item.thumb}}'></image>
+      </view>
+</template>

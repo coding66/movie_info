@@ -1,0 +1,19 @@
+<template name='template'>
+    <view class='movie' bindtap='jumpdetail' id='{{item.id}}'>
+    <view class='wrap'></view>
+      <view class='movie-info'><image src='{{item.images.medium}}'  class='pic'></image>
+      </view>
+      <view class='introduce'>
+      <view class='headtitle'>
+         <span class='moviename'>《{{item.title}}》</span>
+          <span class='scroe'>{{item.rating.average}}分</span>
+      </view>
+          
+          <view class='des'>
+          <text class='director'>{{item.text}}</text>
+          
+          </view>
+          
+      </view>
+    </view>
+</template>

@@ -1,0 +1,41 @@
+<!--pages/detail/detail.wxml-->
+<view class='detailtitle'>
+
+    <image class='img' src='{{info.images.large}}'></image>
+</view>
+<view class='imgwrap'>
+    <image class='img2' src='{{info.images.large}}'></image>
+</view>
+<view class='rating'>
+  <view class='commit'>电影评分</view>
+        <i-rate  
+            value="{{3}}" 
+            size="32">
+        </i-rate> 
+</view>
+<view class='detailcontent'>
+    <view class='detailinfo'>
+       <text class='detailcontent'>{{info.text}}</text>    
+    </view>
+    <view class='conments'>
+        <text class='sore'><text class='soretxt'>豆瓣评分:  </text>{{info.rating.average}}</text>
+    </view>
+</view>
+<view class='tag'>《{{info.title}}》剧情介绍</view>
+<view class='detailintroduce'>
+<text class="{{taggle?'hiden':'show'}}">{{info.summary}}</text>
+<a href='#'class='btn' bindtap='taggletap'>  {{taggle?'显示全部':'隐藏'}}</a>
+</view>
+<view class='tag2'>《{{info.title}}》剧情图片</view>
+<view class='detailimgs'>
+<import src='../template/template2'/>
+<block wx:for='{{info.potonew}}'>
+    <template is='pictrues' data='{{item}}'></template>
+</block>
+</view>
+<view class='tag3'>《{{info.title}}》播放地址</view>
+<import src='../template/template3' />
+<view class='playadrr'>
+   <block wx:for=''></block>
+</view>
+<loading hidden="{{hiddenLoading}}">正在加载</loading>

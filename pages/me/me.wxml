@@ -1,0 +1,20 @@
+<view class='content'>
+<view class='search'>
+  <!-- <input class='serchtxt' bindinput='inputinfo'></input>
+  <button class='searchbtn' hover-class='color' bindtap='sosuo'>搜索</button>
+  <button class='cleanbtn' hover-class='colorred' bindtap='clean'>清除</button> -->
+<view class='serchbox'>
+     <input type='text' class='serchtxt' bindinput='inputinfo' placeholder='请输入喜爱的演员或影名'></input>
+     <view class='sosuo' bindtap='sosuo'>
+      <i-icon type="search" size="28"         color="#80848f"></i-icon>
+     </view>
+</view>
+<view class='back' bindtap='clean'>返回</view>
+</view>
+<import src='../template/template'/>
+   <block wx:for='{{movie}}'>
+      <template is='template' data='{{item}}'></template>
+
+   </block>
+   <loading hidden="{{hiddenLoading}}">正在加载</loading>
+</view>

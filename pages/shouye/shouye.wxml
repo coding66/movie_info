@@ -1,0 +1,16 @@
+<view class='content'>
+   <swiper class='swrap' indicator-dots='{{dots}}' autoplay='{{autoplay}}'
+   interval='{{interval}}' duration='{{duration}}' circular='{{circular}}' >
+   <block wx:for='{{imgurl}}'>
+       <swiper-item>
+          <image src='{{item}}' class='img'></image>
+       </swiper-item>
+   </block>     
+   </swiper>
+   <import src='../template/template'/>
+   <block wx:for='{{info}}'>
+      <template is='template' data='{{item}}'></template>
+
+   </block>
+   <loading hidden="{{hiddenLoading}}">正在加载</loading>
+</view>

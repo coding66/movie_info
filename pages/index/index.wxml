@@ -1,0 +1,6 @@
+<view class='content'>
+ 
+   <image class='bg' src='{{imgurl}}'>
+   <button class='btn' bindtap='enter' type="primary" size='mini' >开始体验</button> 
+   </image>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/pur/pur.wxml-->
+<import src='../template/template'/>
+   <block wx:for='{{info}}'>
+      <template is='template' data='{{item}}'></template>
+
+   </block>
+   <loading hidden="{{hiddenLoading}}">正在加载</loading>
